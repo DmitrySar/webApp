@@ -23,7 +23,7 @@
 |Действие jsp:plugin|<jsp:plugin attribute="значение"*> ... </jsp:plugin>|Генерирует тэги  OBJECT или EMBED, в зависимости от типа броузера, в котором будет выполнятся апплет использующий  Java Plugin.||
 
 
-* [JavaRush TomCat](https://javarush.ru/groups/posts/tomcat-v-java)
+* [JavaRush Tomcat](https://javarush.ru/groups/posts/tomcat-v-java)
 * [JavaRush Создание веб-приложения](https://javarush.ru/groups/posts/328-sozdanie-prostogo-veb-prilozhenija-na-servletakh-i-jsp-chastjh-1)
 * [JavaRush Создание веб-проекта в IntelliJ Idea Enterprise](https://javarush.ru/groups/posts/305-sozdanie-prosteyshego-web-proekta-v-intellij-idea-enterprise-edition-poshagovo-s-kartinkami)
 * [JavaRush web application IntelliJ](https://javarush.ru/quests/lectures/questcollections.level09.lecture02)
@@ -43,3 +43,14 @@ ___
 		%>
 	</body>
 ```
+---
+[Руководство по Java EE/Jakarta EE](https://metanit.com/java/javaee/)
+---
+## Задания:
+* Установить Tomcat
+	* [Tomcat](http://tomcat.apache.org/)
+* Создать WebApp
+	* [JAVARUSH](https://javarush.ru/quests/lectures/questcollections.level09.lecture02)
+* Изучить JSP
+* Изучить Servlets
+* Изучить Java Beans
