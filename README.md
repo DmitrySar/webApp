@@ -1,7 +1,10 @@
 # Servlets & JSP
 
 ## Знакомство
+### HTTP запрос:
+![HTTP request](https://javarush.ru/images/article/1aa51155-aeff-4f5b-bb23-828b81965e04/1024.webp)
 
+### Web server Tomcat:
 ![Tomcat](https://javarush.ru/images/article/1774872d-ba75-49d0-8ae2-4b1de2212ece/1080.webp)
 
 # Введение в JSP
