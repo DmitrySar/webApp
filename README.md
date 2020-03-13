@@ -32,7 +32,7 @@
 * [JavaRush web application IntelliJ](https://javarush.ru/quests/lectures/questcollections.level09.lecture02)
 ___
 
-### Кодировка JSP
+### Кодировка JSP:
 ```HTML
 	<head><title>Title</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -48,7 +48,7 @@ ___
 ```
 ---
 ### Кодировка Servlet:
-```
+```Java
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html; charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
