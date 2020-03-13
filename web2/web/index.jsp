@@ -33,7 +33,9 @@
   <h2>
     <jsp:getProperty name="testBean" property="name"/>
   </h2>
-
+  <p>
+    <a href="questinary.jsp">Вопросник</a>
+  </p>
 
   $END$
   </body>
