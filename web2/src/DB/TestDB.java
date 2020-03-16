@@ -8,13 +8,8 @@ import java.util.stream.Stream;
 
 public class TestDB {
 
-    private static ArrayList<Student> students = new ArrayList<>();
-
+    
     public static void main(String[] args) {
-
-//        students.add(new Student("Иванов Иван Иванович", 18, 303));
-//        students.add(new Student("Петров Петр Петрович", 19, 304));
-//        students.add(new Student("Сидоров Сидор Сидорович", 20, 202));
         Stream<Student> students = Stream.of(
                 new Student("Иванов Иван Иванович", 18, 303),
                 new Student("Петров Петр Петрович", 19, 304),
@@ -43,12 +38,6 @@ public class TestDB {
                     e.printStackTrace();
                 }
             });
-//            preparedStatement.setString(1, "Иванов Иван Иванович");
-//            preparedStatement.setInt(2, 23);
-//            preparedStatement.setInt(3, 404);
-//            preparedStatement.execute();
-
-//            statement.execute(insertValueToTable);
 
             ResultSet resultSet = statement.executeQuery(selectQuery);
             while (resultSet.next()) {
