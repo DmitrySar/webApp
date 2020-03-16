@@ -9,6 +9,7 @@
 <html>
   <head>
     <title>$Title$</title>
+    <link rel="stylesheet" type="text/css" href="example.css">
   </head>
   <body>
   <h1>
@@ -18,6 +19,7 @@
     <!-- insert expression -->
     <%= new Date() %>
     <br>
+     2 + 3 =
     <%= 2 + 3 %>
   </h1>
 

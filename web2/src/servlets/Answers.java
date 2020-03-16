@@ -20,8 +20,9 @@ public class Answers extends HttpServlet {
         String[] courses = request.getParameterValues("courses");
 
         try (PrintWriter writer = response.getWriter()) {
-            writer.println("<p>Name: " + name + "</p>");
-            writer.println("<p>Age: " + age + "</p>");
+            writer.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"example.css\">");
+            writer.println("<p>Имя: " + name + "</p>");
+            writer.println("<p>Возраст: " + age + "</p>");
             writer.println("<p>Gender: " + gender + "</p>");
             writer.println("<p>Country: " + country + "</p>");
             writer.println("<h4>Courses</h4>");

@@ -1,0 +1,16 @@
+p {
+    color: blue;
+    font-size: 32px;
+
+}
+
+input {
+    width: 64px;
+    font-size: 32px;
+    color: #000000;
+}
+
+button {
+    font-size: 32px;
+    color: #000000;
+}
