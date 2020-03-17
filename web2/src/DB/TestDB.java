@@ -2,14 +2,12 @@ package DB;
 
 import java.lang.reflect.InvocationTargetException;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.function.Consumer;
 import java.util.stream.Stream;
 
 public class TestDB {
 
-    
     public static void main(String[] args) {
+
         Stream<Student> students = Stream.of(
                 new Student("Иванов Иван Иванович", 18, 303),
                 new Student("Петров Петр Петрович", 19, 304),
