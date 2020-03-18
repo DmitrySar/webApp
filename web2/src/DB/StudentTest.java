@@ -1,7 +1,6 @@
 package DB;
 
 import java.util.ArrayList;
-import java.util.stream.Stream;
 
 public class StudentTest {
 
@@ -18,7 +17,7 @@ public class StudentTest {
 //        dbStudent.updateStudent(s, 5);
 
         //SELECT
-         ArrayList<Student> students = new DBStudent().getSelect();
+         ArrayList<Student> students = new DBStudent().getStudents();
         for (Student student: students) {
             System.out.println(String.format("%d %s %d %d", student.getId(), student.getName(), student.getAge(), student.getNum()));
         }

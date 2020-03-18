@@ -3,9 +3,6 @@ package DB;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Formatter;
-import java.util.List;
-import java.util.stream.Stream;
 
 public class DBStudent {
 
@@ -15,7 +12,8 @@ public class DBStudent {
     private String login = "sa";
     private String password = "";
 
-    public ArrayList<Student> getSelect() {
+    public ArrayList<Student> getStudents() {
+        query = "SELECT ID, NAME, AGE, GROUP_NUMBER FROM STUDENTS ORDER BY ID";
         ArrayList<Student> table = new ArrayList<>();
         try (Connection connection = DriverManager.getConnection(connectionString, login, password);
              Statement statement = connection.createStatement()) {
@@ -37,7 +35,7 @@ public class DBStudent {
     }
 
     public boolean insertStudent(Student student) {
-        query = String.format("INSERT INTO STUDENTS(NAME, AGE, GROUP_NUMBER) VALUES(%s, %d, %d)",
+        query = String.format("INSERT INTO STUDENTS(NAME, AGE, GROUP_NUMBER) VALUES('%s', %d, %d)",
                 student.getName(), student.getAge(), student.getNum());
         try (Connection connection = DriverManager.getConnection(connectionString, login, password);
         Statement statement = connection.createStatement()) {

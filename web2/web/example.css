@@ -4,13 +4,12 @@ p {
 
 }
 
-input {
-    width: 64px;
+button {
     font-size: 32px;
     color: #000000;
 }
 
-button {
+td {
+    color: darkblue;
     font-size: 32px;
-    color: #000000;
 }

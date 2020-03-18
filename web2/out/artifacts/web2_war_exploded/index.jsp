@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="example.css">
   </head>
   <body>
+  <h1><a href="studentslist.jsp">Список учащихся</a></h1>
+  <h1><a href="adduser.jsp">Добавить учащегося</a> </h1>
   <h1>
     <!-- servlet -->
     <%= request.getAttribute("date") %>
