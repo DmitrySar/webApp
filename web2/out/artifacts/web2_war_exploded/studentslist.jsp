@@ -5,7 +5,7 @@
 <html>
 <head>
     <title>Список учащихся</title>
-
+    <!-- link rel="stylesheet" type="text/css" href="example.css" -->
 </head>
 <body>
 <%!
@@ -37,8 +37,8 @@
     %>
 <h1>Список учащихся</h1>
 
-<table>
-    <tr><td>ID</td><td>NAME</td><td>AGE</td><td>GROUP</td></tr>
+<table id="customers">
+    <tr><th>ID</th><th>NAME</th><th>AGE</th><th>GROUP</th></tr>
     <%
         ArrayList<Student> students = new DBStudent().getStudents();
 
