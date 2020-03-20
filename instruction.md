@@ -31,6 +31,16 @@
      @java -cp "h2-1.4.200.jar;%H2DRIVERS%;%CLASSPATH%" org.h2.tools.Console %*
      @if errorlevel 1 pause
      ```
+     * Если будем запускать tomcat из конслои незабываем указывать где находится JDK:
+     ``` bat
+     set java_home=d:\jdk\bin
+     ```
+     * Далее идём в папку d:\tomcat\bin и стартуем startup.bat
+     ``` cmd
+     cd d:\tomcat\bin
+     d:
+     startup
+     ```
 
 # SQL Example:
 ``` SQL
