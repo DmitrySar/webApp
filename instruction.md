@@ -25,6 +25,13 @@
       set "CLASSPATH=%CLASSPATH%%CATALINA_HOME%\bin\bootstrap.jar"
       set "CLASSPATH=%CLASSPATH%;%CATALINA_HOME%\lib\h2-1.4.200.jar
   ```
+   * содержимое файла d:\h2\bin\h2.bat:
+     ``` bat
+     set path=%path%;d:\jdk\bin
+     @java -cp "h2-1.4.200.jar;%H2DRIVERS%;%CLASSPATH%" org.h2.tools.Console %*
+     @if errorlevel 1 pause
+     ```
+
 # SQL Example:
 ``` SQL
 DROP TABLE IF EXISTS STUDENTS;
