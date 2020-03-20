@@ -33,7 +33,7 @@
      ```
      * Если будем запускать tomcat из конслои незабываем указывать где находится JDK:
      ``` bat
-     set java_home=d:\jdk\bin
+     set java_home=d:\jdk
      ```
      * Далее идём в папку d:\tomcat\bin и стартуем startup.bat
      ``` cmd
